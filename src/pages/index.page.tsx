@@ -1,73 +1,83 @@
 import Image from 'next/image'
-
+import styles from 'styles/index.module.scss'
+import { Layout } from '~/components/layout/layout'
 export default function Home() {
   return (
-    <main>
-      <h3 className="text-center"> Пробная тренировка - <span className="text-red">Бесплатно</span>!</h3>
-      <p className="text-center">Место, где <span className="text-red">каждый</span> ребенок или подросток сможет получить <span className="text-red">качественное</span> обучение <span className="text-red">танцевальному искусству</span></p>
+    <Layout>
+      <h3 className="text-center">
+        {' '}
+        Пробная тренировка - <span className="text-red">Бесплатно</span>!
+      </h3>
+      <p className="text-center">
+        Место, где <span className="text-red">каждый</span> ребенок или
+        подросток сможет получить <span className="text-red">качественное</span>{' '}
+        обучение <span className="text-red">танцевальному искусству</span>
+      </p>
 
       <hr />
 
-      <h1 className='page-header-text'>Почему</h1>
-      <h1 className='page-header-text'>
+      <h1 className="page-header-text">Почему</h1>
+      <h1 className="page-header-text">
         <span className="text-red">‌Вам нужно в KOD</span>?
       </h1>
 
       <p className="text-justify">
-        Мы <span className="text-red">гарантируем</span> профессиональный и грамотный подход к <span className="text-red">каждому </span>
-        ученику и <span className="text-red">рост</span> в танцевальных направлениях
+        Мы <span className="text-red">гарантируем</span> профессиональный и
+        грамотный подход к <span className="text-red">каждому </span>
+        ученику и <span className="text-red">рост</span> в танцевальных
+        направлениях
         <br />
         <br />
-        Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и насыщенных занятий
+        Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и
+        насыщенных занятий
         <br />
+        <br />В нашей <span className="text-red">команде</span> есть место тем,
+        кто разделяет нашу <span className="text-red">любовь</span> к танцам и
+        готов отдаться этому <span className="text-red">искусству</span>
         <br />
-        В нашей <span className="text-red">команде</span> есть место тем, кто разделяет нашу <span className="text-red">любовь</span> к танцам и готов отдаться этому <span className="text-red">искусству</span>
-        <br />
-        <br />
-        С <span className="text-red font-caveat fs-20">KOD</span> путь к большой сцене будет насыщенным и очень интересным
+        <br />С <span className="text-red font-caveat fs-20">KOD</span> путь к
+        большой сцене будет насыщенным и очень интересным
       </p>
 
-
       <div>
-        <h1 className='page-header-text'>
+        <h1 className="page-header-text">
           Стань частью нашего <span className="text-red">Комьюнити</span>
         </h1>
         <div className="carousel-container">
           <div className="carousel">
             <Image
-              className='kod-photo'
+              className="kod-photo"
               src="/us_1.jpg"
               width={800}
               height={534}
               alt="Dance KOD коллектив. Школа танцев. Дети"
             />
             <Image
-              className='kod-photo'
+              className="kod-photo"
               src="/us_2.jpg"
               width={800}
               height={534}
               alt="Dance KOD коллектив. Школа танцев. Дети"
             />
             <Image
-              className='kod-photo'
+              className="kod-photo"
               src="/us_3.jpg"
               width={800}
               height={534}
               alt="Dance KOD коллектив. Школа танцев. Дети"
             />
             <Image
-              className='kod-photo'
+              className="kod-photo"
               src="/us_4.jpg"
               width={800}
               height={534}
               alt="Dance KOD коллектив. Школа танцев. Дети"
             />
-
           </div>
         </div>
       </div>
 
-      <div className='feedback-form-block'>
+      <div className="feedback-form-block">
         <form className="feedback-form">
           <label htmlFor="parentName">ФИО родителя *</label>
           <input type="text" id="parentName" name="parentName" required />
@@ -80,37 +90,38 @@ export default function Home() {
 
           <label htmlFor="address">Выберите адрес *</label>
           <select id="address" name="address" required>
-            <option value="address1">2-й пос. Оржонизидзе | ул. Днепропетровская 27</option>
+            <option value="address1">
+              2-й пос. Оржонизидзе | ул. Днепропетровская 27
+            </option>
             <option value="address2">Северный | пер. Ольховский 71</option>
           </select>
 
-
-
           <label htmlFor="phone">Телефон *</label>
-          <input type="tel" id="phone" name="phone" placeholder="8 888 888 8888" pattern="[7-8]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="8 888 888 8888"
+            pattern="[7-8]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+            required
+          />
 
           <button type="submit">Записаться</button>
         </form>
         <span className="text-center info-small">
           <ul>
             или запишитесь по телефонам:
-            <li>
-              ‌‌+7 (918) 571 26 89
-            </li>
-            <li>
-              ‌+7 (919) 873 93 65
-            </li>
+            <li>‌‌+7 (918) 571 26 89</li>
+            <li>‌+7 (919) 873 93 65</li>
           </ul>
-
         </span>
       </div>
 
       <hr />
 
-      <h1 className='page-header-text'>
+      <h1 className="page-header-text">
         <span className="text-red">Основные</span> направления
       </h1>
-
 
       <ul className="ul-2-cols">
         <li>
@@ -148,23 +159,13 @@ export default function Home() {
         </li>
         <li>
           <div>
-            <Image
-              src="/modern.png"
-              width={60}
-              height={60}
-              alt="Модерн"
-            />
+            <Image src="/modern.png" width={60} height={60} alt="Модерн" />
             Модерн
           </div>
         </li>
         <li>
           <div>
-            <Image
-              src="/jazz.png"
-              width={60}
-              height={60}
-              alt="Джаз"
-            />
+            <Image src="/jazz.png" width={60} height={60} alt="Джаз" />
             Джаз
           </div>
         </li>
@@ -205,25 +206,15 @@ export default function Home() {
 
       <hr />
 
-
-
-
-
       <span className="text-center">
-        <h1 className='page-header-text'>
-          Стань частью нашего
-        </h1>
-        <h1 className='page-header-text'>
+        <h1 className="page-header-text">Стань частью нашего</h1>
+        <h1 className="page-header-text">
           <span className="text-red">Комьюнити</span>
         </h1>
         <ul>
           Звоните:
-          <li>
-            ‌‌+7 (918) 571 26 89
-          </li>
-          <li>
-            ‌+7 (919) 873 93 65
-          </li>
+          <li>‌‌+7 (918) 571 26 89</li>
+          <li>‌+7 (919) 873 93 65</li>
         </ul>
       </span>
 
@@ -240,8 +231,6 @@ export default function Home() {
           <p>Анастасия</p>
         </button>
       </div>
-
-
-    </main>
+    </Layout>
   )
 }
