@@ -1,95 +1,247 @@
 import Image from 'next/image'
-import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <h3 className="text-center"> Пробная тренировка - <span className="text-red">Бесплатно</span>!</h3>
+      <p className="text-center">Место, где <span className="text-red">каждый</span> ребенок или подросток сможет получить <span className="text-red">качественное</span> обучение <span className="text-red">танцевальному искусству</span></p>
+
+      <hr />
+
+      <h1 className='page-header-text'>Почему</h1>
+      <h1 className='page-header-text'>
+        <span className="text-red">‌Вам нужно в KOD</span>?
+      </h1>
+
+      <p className="text-justify">
+        Мы <span className="text-red">гарантируем</span> профессиональный и грамотный подход к <span className="text-red">каждому </span>
+        ученику и <span className="text-red">рост</span> в танцевальных направлениях
+        <br />
+        <br />
+        Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и насыщенных занятий
+        <br />
+        <br />
+        В нашей <span className="text-red">команде</span> есть место тем, кто разделяет нашу <span className="text-red">любовь</span> к танцам и готов отдаться этому <span className="text-red">искусству</span>
+        <br />
+        <br />
+        С <span className="text-red font-caveat fs-20">KOD</span> путь к большой сцене будет насыщенным и очень интересным
+      </p>
+
+
+      <div>
+        <h1 className='page-header-text'>
+          Стань частью нашего <span className="text-red">Комьюнити</span>
+        </h1>
+        <div className="carousel-container">
+          <div className="carousel">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              className='kod-photo'
+              src="/us_1.jpg"
+              width={800}
+              height={534}
+              alt="Dance KOD коллектив. Школа танцев. Дети"
             />
-          </a>
+            <Image
+              className='kod-photo'
+              src="/us_2.jpg"
+              width={800}
+              height={534}
+              alt="Dance KOD коллектив. Школа танцев. Дети"
+            />
+            <Image
+              className='kod-photo'
+              src="/us_3.jpg"
+              width={800}
+              height={534}
+              alt="Dance KOD коллектив. Школа танцев. Дети"
+            />
+            <Image
+              className='kod-photo'
+              src="/us_4.jpg"
+              width={800}
+              height={534}
+              alt="Dance KOD коллектив. Школа танцев. Дети"
+            />
+
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='feedback-form-block'>
+        <form className="feedback-form">
+          <label htmlFor="parentName">ФИО родителя *</label>
+          <input type="text" id="parentName" name="parentName" required />
+
+          <label htmlFor="childName">ФИО ребенка *</label>
+          <input type="text" id="childName" name="childName" required />
+
+          <label htmlFor="childAge">Возраст ребенка *</label>
+          <input type="number" id="childAge" name="childAge" required />
+
+          <label htmlFor="address">Выберите адрес *</label>
+          <select id="address" name="address" required>
+            <option value="address1">2-й пос. Оржонизидзе | ул. Днепропетровская 27</option>
+            <option value="address2">Северный | пер. Ольховский 71</option>
+          </select>
+
+
+
+          <label htmlFor="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" placeholder="8 888 888 8888" pattern="[7-8]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required />
+
+          <button type="submit">Записаться</button>
+        </form>
+        <span className="text-center info-small">
+          <ul>
+            или запишитесь по телефонам:
+            <li>
+              ‌‌+7 (918) 571 26 89
+            </li>
+            <li>
+              ‌+7 (919) 873 93 65
+            </li>
+          </ul>
+
+        </span>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <hr />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <h1 className='page-header-text'>
+        <span className="text-red">Основные</span> направления
+      </h1>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <ul className="ul-2-cols">
+        <li>
+          <div>
+            <Image
+              src="/choreography.png"
+              width={60}
+              height={60}
+              alt="Современная хореография"
+            />
+            Современная хореография
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/classical_dance.png"
+              width={60}
+              height={60}
+              alt="Классический танец"
+            />
+            ‌Классический танец
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/stretching.png"
+              width={60}
+              height={60}
+              alt="Стретчинг"
+            />
+            Стретчинг
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/modern.png"
+              width={60}
+              height={60}
+              alt="Модерн"
+            />
+            Модерн
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/jazz.png"
+              width={60}
+              height={60}
+              alt="Джаз"
+            />
+            Джаз
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/acrobatic.png"
+              width={60}
+              height={60}
+              alt="Акробатика"
+            />
+            Акробатика
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/common_fp.png"
+              width={60}
+              height={60}
+              alt="Общая физическая подготовка"
+            />
+            Общая физическая подготовка
+          </div>
+        </li>
+        <li>
+          <div>
+            <Image
+              src="/special_fp.png"
+              width={60}
+              height={60}
+              alt="Специальная физическая подготовка"
+            />
+            Специальная физическая подготовка
+          </div>
+        </li>
+      </ul>
+
+      <hr />
+
+
+
+
+
+      <span className="text-center">
+        <h1 className='page-header-text'>
+          Стань частью нашего
+        </h1>
+        <h1 className='page-header-text'>
+          <span className="text-red">Комьюнити</span>
+        </h1>
+        <ul>
+          Звоните:
+          <li>
+            ‌‌+7 (918) 571 26 89
+          </li>
+          <li>
+            ‌+7 (919) 873 93 65
+          </li>
+        </ul>
+      </span>
+
+      <div className="call-button-container">
+        <button className="call-button">
+          <p>+7 (918) 571 26 89</p>
+          <p>Татьяна</p>
+        </button>
+
+        <br />
+
+        <button className="call-button">
+          <p>‌+7 (919) 873 93 65</p>
+          <p>Анастасия</p>
+        </button>
       </div>
+
+
     </main>
   )
 }
