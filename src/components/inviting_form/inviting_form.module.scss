@@ -1,8 +1,8 @@
 /* form */
 
 .inviting_form_block {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 60px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url('/fon.jpg');
     /* Прозрачный белый градиент и изображение */
     border: none;
@@ -21,8 +21,9 @@
 }
 
 .inviting_form label {
-    font-weight: 600;
-    font-size: 18px;
+    font-family: 'Neucha', cursive;
+    font-weight: 400;
+    font-size: 22px;
     margin-bottom: 8px;
     display: block;
 }
@@ -74,6 +75,48 @@
     text-align: center;
     font-size: 14px;
     font-weight: 500;
+}
+
+.success_popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: fade_in_out 5s;
+}
+
+.error_popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ce1818;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: fade_in_out 10s;
+}
+
+/* Анимация для появления и исчезновения */
+@keyframes fade_in_out {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 800px) {
