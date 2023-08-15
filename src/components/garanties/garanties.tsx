@@ -21,7 +21,7 @@ export const Garanties = () => {
         кто разделяет нашу <span className="red">любовь</span> к танцам и
         готов отдаться этому <span className="red">искусству</span>
         <br />
-        <br />С <span className="red font-caveat fs-22">KOD</span> путь к
+        <br />С <span className="red font-caveat fs-30">KOD</span> путь к
         большой сцене будет насыщенным и очень интересным
       </p>
     </div>

@@ -24,6 +24,8 @@ export default function Home() {
 
       <Garanties />
 
+      <hr />
+
       <div>
         <h1 className="page-header-text">
           Стань частью нашего <span className="red">Комьюнити</span>
