@@ -5,12 +5,12 @@ export const Header = () => {
     <div>
       <h1 className={styles.title}>
         {" "}
-        Dance <span className={styles.red}> KOD </span>{" "}
+        Dance <span className='red'> KOD </span>{" "}
       </h1>
       <h2 className={styles.subTitle}>
-        <span className={styles.red}>К</span>омьюнити{" "}
-        <span className={styles.red}>О</span>даренных{" "}
-        <span className={styles.red}>Д</span>етей
+        <span className='red'>К</span>омьюнити{" "}
+        <span className='red'>О</span>даренных{" "}
+        <span className='red'>Д</span>етей
       </h2>
       <h2 className={styles.subTitle}>Школа танцев</h2>
 

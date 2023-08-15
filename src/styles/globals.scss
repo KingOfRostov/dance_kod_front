@@ -26,33 +26,12 @@ hr {
   margin-right: auto;
 }
 
-.ul-2-cols {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
 ul {
   list-style: none;
 }
 
-.ul-2-cols {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Две колонки на ПК */
-  gap: 10px;
-  /* Расстояние между элементами */
-}
-
-.ul-2-cols li {
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px 10px;
+.red {
+  color: #ce1818;
 }
 
 .text-center {
@@ -198,11 +177,6 @@ ul {
 
 /* Медиа-запрос для адаптивности */
 @media (max-width: 800px) {
-  .ul-2-cols {
-    grid-template-columns: 1fr;
-    /* Одна колонка на мобильных */
-  }
-
   .carousel img {
     max-width: 100%;
     /* Полная ширина на экранах до 800px */

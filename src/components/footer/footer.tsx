@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <hr />
       <h3 className={styles.title}>
-        <span className={styles.red}>Мы</span> в соцсетях
+        <span className='red'>Мы</span> в соцсетях
       </h3>
       <div className={styles.social}>
         <Link

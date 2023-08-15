@@ -3,48 +3,49 @@ import styles from 'styles/index.module.scss'
 import { Layout } from '~/components/layout/layout'
 import { Maps } from '~/components/maps/maps'
 import { InvitingForm } from '~/components/inviting_form/inviting_form'
+import { MainDirections } from '~/components/main_directions/main_directions'
 
 export default function Home() {
   return (
     <Layout>
       <h3 className="text-center">
         {' '}
-        Пробная тренировка - <span className="text-red">Бесплатно</span>!
+        Пробная тренировка - <span className="red">Бесплатно</span>!
       </h3>
       <p className="text-center">
-        Место, где <span className="text-red">каждый</span> ребенок или
-        подросток сможет получить <span className="text-red">качественное</span>{' '}
-        обучение <span className="text-red">танцевальному искусству</span>
+        Место, где <span className="red">каждый</span> ребенок или
+        подросток сможет получить <span className="red">качественное</span>{' '}
+        обучение <span className="red">танцевальному искусству</span>
       </p>
 
       <hr />
 
       <h1 className="page-header-text">Почему</h1>
       <h1 className="page-header-text">
-        <span className="text-red">‌Вам нужно в KOD</span>?
+        <span className="red">‌Вам нужно в KOD</span>?
       </h1>
 
       <p className="text-justify">
-        Мы <span className="text-red">гарантируем</span> профессиональный и
-        грамотный подход к <span className="text-red">каждому </span>
-        ученику и <span className="text-red">рост</span> в танцевальных
+        Мы <span className="red">гарантируем</span> профессиональный и
+        грамотный подход к <span className="red">каждому </span>
+        ученику и <span className="red">рост</span> в танцевальных
         направлениях
         <br />
         <br />
         Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и
         насыщенных занятий
         <br />
-        <br />В нашей <span className="text-red">команде</span> есть место тем,
-        кто разделяет нашу <span className="text-red">любовь</span> к танцам и
-        готов отдаться этому <span className="text-red">искусству</span>
+        <br />В нашей <span className="red">команде</span> есть место тем,
+        кто разделяет нашу <span className="red">любовь</span> к танцам и
+        готов отдаться этому <span className="red">искусству</span>
         <br />
-        <br />С <span className="text-red font-caveat fs-20">KOD</span> путь к
+        <br />С <span className="red font-caveat fs-20">KOD</span> путь к
         большой сцене будет насыщенным и очень интересным
       </p>
 
       <div>
         <h1 className="page-header-text">
-          Стань частью нашего <span className="text-red">Комьюнити</span>
+          Стань частью нашего <span className="red">Комьюнити</span>
         </h1>
         <div className="carousel-container">
           <div className="carousel">
@@ -84,90 +85,7 @@ export default function Home() {
 
       <hr />
 
-      <h1 className="page-header-text">
-        <span className="text-red">Основные</span> направления
-      </h1>
-
-      <ul className="ul-2-cols">
-        <li>
-          <div>
-            <Image
-              src="/choreography.png"
-              width={60}
-              height={60}
-              alt="Современная хореография"
-            />
-            Современная хореография
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image
-              src="/classical_dance.png"
-              width={60}
-              height={60}
-              alt="Классический танец"
-            />
-            ‌Классический танец
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image
-              src="/stretching.png"
-              width={60}
-              height={60}
-              alt="Стретчинг"
-            />
-            Стретчинг
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image src="/modern.png" width={60} height={60} alt="Модерн" />
-            Модерн
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image src="/jazz.png" width={60} height={60} alt="Джаз" />
-            Джаз
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image
-              src="/acrobatic.png"
-              width={60}
-              height={60}
-              alt="Акробатика"
-            />
-            Акробатика
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image
-              src="/common_fp.png"
-              width={60}
-              height={60}
-              alt="Общая физическая подготовка"
-            />
-            Общая физическая подготовка
-          </div>
-        </li>
-        <li>
-          <div>
-            <Image
-              src="/special_fp.png"
-              width={60}
-              height={60}
-              alt="Специальная физическая подготовка"
-            />
-            Специальная физическая подготовка
-          </div>
-        </li>
-      </ul>
+      <MainDirections />
 
       <hr />
 
@@ -176,7 +94,7 @@ export default function Home() {
       <span className="text-center">
         <h1 className="page-header-text">Стань частью нашего</h1>
         <h1 className="page-header-text">
-          <span className="text-red">Комьюнити</span>
+          <span className="red">Комьюнити</span>
         </h1>
         <ul>
           Звоните:
