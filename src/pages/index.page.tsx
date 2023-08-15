@@ -5,17 +5,22 @@ import { Maps } from '~/components/maps/maps'
 import { InvitingForm } from '~/components/inviting_form/inviting_form'
 import { MainDirections } from '~/components/main_directions/main_directions'
 import { KidsCarousel } from '~/components/kids_carousel/kids_carousel'
+import { PhoneButton } from '~/components/phone_button/phone_button'
 
 export default function Home() {
+  const TatianaPhoneNumber: string = '+7 (918) 571 26 89';
+  const TatianaName: string = 'Татьяна';
+  const AnastasiaPhoneNumber: string = '‌+7 (919) 873 93 65';
+  const AnastasiaName: string = 'Анастасия';
+
   return (
     <Layout>
       <h3 className="text-center">
-        {' '}
         Пробная тренировка - <span className="red">Бесплатно</span>!
       </h3>
       <p className="text-center">
         Место, где <span className="red">каждый</span> ребенок или
-        подросток сможет получить <span className="red">качественное</span>{' '}
+        подросток сможет получить <span className="red">качественное</span>
         обучение танцевальному искусству
       </p>
 
@@ -68,23 +73,15 @@ export default function Home() {
         </h1>
         <ul>
           Звоните:
-          <li>‌‌+7 (918) 571 26 89</li>
-          <li>‌+7 (919) 873 93 65</li>
+          <li>{TatianaPhoneNumber}</li>
+          <li>‌{AnastasiaPhoneNumber}</li>
         </ul>
       </span>
 
-      <div className="call-button-container">
-        <button className="call-button">
-          <p>+7 (918) 571 26 89</p>
-          <p>Татьяна</p>
-        </button>
-
+      <div className={styles.call_button_container}>
+        <PhoneButton phoneNumber={TatianaPhoneNumber} name={TatianaName} />
         <br />
-
-        <button className="call-button">
-          <p>‌+7 (919) 873 93 65</p>
-          <p>Анастасия</p>
-        </button>
+        <PhoneButton phoneNumber={AnastasiaPhoneNumber} name={AnastasiaName} />
       </div>
     </Layout>
   )
