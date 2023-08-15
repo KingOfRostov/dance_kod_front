@@ -13,11 +13,20 @@
 }
 
 .ul_2_cols li {
+    position: relative;
+    /* Добавляем относительное позиционирование */
     background-color: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px 10px;
+}
+
+.ul_2_cols li>div {
+    display: flex;
+    /* Используем flex для внутреннего контейнера */
+    align-items: center;
+    /* Выравниваем элементы по центру по вертикали */
 }
 
 /* Медиа-запрос для адаптивности */
