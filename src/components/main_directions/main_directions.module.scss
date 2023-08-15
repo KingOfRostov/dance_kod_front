@@ -7,33 +7,39 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Две колонки на ПК */
-    gap: 10px;
-    /* Расстояние между элементами */
+    gap: 20px;
+    /* Increased gap for a more spacious look */
 }
 
 .ul_2_cols li {
     position: relative;
-    /* Добавляем относительное позиционирование */
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    /* Adjusted vertical margin for better spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .ul_2_cols li>div {
     display: flex;
-    /* Используем flex для внутреннего контейнера */
     align-items: center;
-    /* Выравниваем элементы по центру по вертикали */
+
+    /* Add spacing between icon and text */
+    gap: 15px;
 }
 
-/* Медиа-запрос для адаптивности */
+/* Media query for responsiveness */
 @media (max-width: 800px) {
     .ul_2_cols {
         grid-template-columns: 1fr;
-        /* Одна колонка на мобильных */
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
 }
