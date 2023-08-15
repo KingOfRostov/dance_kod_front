@@ -7,7 +7,7 @@ export const Introduction = () => {
       </h3>
       <p className="text-center">
         Место, где <span className="red">каждый</span> ребенок или
-        подросток сможет получить <span className="red">качественное</span>
+        подросток сможет получить <span className="red">качественное </span>
         обучение танцевальному искусству
       </p>
     </div>

@@ -1,6 +1,6 @@
 /* form */
 
-.inviting_form_block {
+.inviting_formblock {
     margin-top: 60px;
     margin-bottom: 20px;
 }
@@ -21,14 +21,16 @@
 .inviting_form select,
 .inviting_form input[type='tel'] {
     width: 100%;
+    /* Установите ширину на 100% */
     padding: 12px;
-    margin-bottom: 20px;
-    margin-top: 8px;
+    margin-bottom: 10px;
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     background-color: #faf5f5;
     font-size: 16px;
     transition: background-color 0.3s;
+    box-sizing: border-box;
+    /* Добавляем этот стиль для корректного учета padding и border в ширине */
 }
 
 .inviting_form select {
