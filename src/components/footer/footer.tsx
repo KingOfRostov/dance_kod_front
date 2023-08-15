@@ -27,7 +27,7 @@ const Footer = () => {
         ‌
       </div>
       <hr />
-      Created by &copy;KingOfRostov
+      Created by &copy;KingOfRostov &copy;mamorde
     </footer>
   )
 }
