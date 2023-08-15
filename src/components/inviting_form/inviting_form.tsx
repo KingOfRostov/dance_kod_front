@@ -3,6 +3,9 @@ import styles from "./inviting_form.module.scss";
 export const InvitingForm = () => {
   return (
     <div className={styles.inviting_form_block}>
+      <h1 className="page-header-text">
+        <span className="red">Запишись</span>
+      </h1>
       <form className={styles.inviting_form}>
         <label htmlFor="parentName">ФИО родителя *</label>
         <input type="text" id="parentName" name="parentName" required />
@@ -33,13 +36,6 @@ export const InvitingForm = () => {
 
         <button type="submit">Записаться</button>
       </form>
-      <span className={styles.after_form_info}>
-        <ul>
-          или запишитесь по телефонам:
-          <li>‌‌+7 (918) 571 26 89</li>
-          <li>‌+7 (919) 873 93 65</li>
-        </ul>
-      </span>
     </div>
 
   );

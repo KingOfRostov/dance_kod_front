@@ -11,8 +11,8 @@ export const KidsCarousel = () => {
         centerMode={true}
         showArrows={false}
         autoPlay={true}
-        interval={4000}
-        transitionTime={2000}
+        interval={2500}
+        transitionTime={1000}
         infiniteLoop={true}
       >
         <Image

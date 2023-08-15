@@ -42,10 +42,6 @@ export default function Home() {
       <Maps />
 
       <span className="text-center">
-        <h1 className="page-header-text">Стань частью нашего</h1>
-        <h1 className="page-header-text">
-          <span className="red">Комьюнити</span>
-        </h1>
         <ul>
           Звоните:
           <li>{TatianaPhoneNumber}</li>
