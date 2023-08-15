@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from 'styles/index.module.scss'
 import { Layout } from '~/components/layout/layout'
+import { Maps } from '~/components/maps/maps'
 export default function Home() {
   return (
     <Layout>
@@ -205,6 +206,8 @@ export default function Home() {
       </ul>
 
       <hr />
+
+      <Maps />
 
       <span className="text-center">
         <h1 className="page-header-text">Стань частью нашего</h1>
