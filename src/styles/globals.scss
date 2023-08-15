@@ -87,54 +87,6 @@ ul {
   background: #ddd;
 }
 
-.kod-photo {
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-
-/* Carousel */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel {
-  display: flex;
-  animation: slideShow 60s infinite;
-}
-
-.carousel img {
-  flex: 0 0 100%;
-  /* Обязательное свойство для равномерного распределения изображений */
-  height: auto;
-  object-fit: cover;
-}
-
-@keyframes slideShow {
-
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-100%);
-  }
-
-  50% {
-    transform: translateX(-200%);
-  }
-
-  75% {
-    transform: translateX(-300%);
-  }
-}
-
 /* call button */
 
 .call-button-container {
@@ -172,13 +124,5 @@ ul {
 
   22% {
     transform: scale(1);
-  }
-}
-
-/* Медиа-запрос для адаптивности */
-@media (max-width: 800px) {
-  .carousel img {
-    max-width: 100%;
-    /* Полная ширина на экранах до 800px */
   }
 }

@@ -4,6 +4,7 @@ import { Layout } from '~/components/layout/layout'
 import { Maps } from '~/components/maps/maps'
 import { InvitingForm } from '~/components/inviting_form/inviting_form'
 import { MainDirections } from '~/components/main_directions/main_directions'
+import { KidsCarousel } from '~/components/kids_carousel/kids_carousel'
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <p className="text-center">
         Место, где <span className="red">каждый</span> ребенок или
         подросток сможет получить <span className="red">качественное</span>{' '}
-        обучение <span className="red">танцевальному искусству</span>
+        обучение танцевальному искусству
       </p>
 
       <hr />
@@ -47,38 +48,7 @@ export default function Home() {
         <h1 className="page-header-text">
           Стань частью нашего <span className="red">Комьюнити</span>
         </h1>
-        <div className="carousel-container">
-          <div className="carousel">
-            <Image
-              className="kod-photo"
-              src="/us_1.jpg"
-              width={800}
-              height={534}
-              alt="Dance KOD коллектив. Школа танцев. Дети"
-            />
-            <Image
-              className="kod-photo"
-              src="/us_2.jpg"
-              width={800}
-              height={534}
-              alt="Dance KOD коллектив. Школа танцев. Дети"
-            />
-            <Image
-              className="kod-photo"
-              src="/us_3.jpg"
-              width={800}
-              height={534}
-              alt="Dance KOD коллектив. Школа танцев. Дети"
-            />
-            <Image
-              className="kod-photo"
-              src="/us_4.jpg"
-              width={800}
-              height={534}
-              alt="Dance KOD коллектив. Школа танцев. Дети"
-            />
-          </div>
-        </div>
+        <KidsCarousel />
       </div>
 
       <InvitingForm />
