@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Amatic+SC:wght@700&family=Caveat:wght@600;700&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Amatic+SC:wght@700&family=Caveat:wght@600;700&family=Open+Sans:wght@300;400;500&display=swap');
 
 html,
 body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url('/wall.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  position: relative;
   color: #0a3556;
   max-width: 800px;
   width: 100%;
   margin: auto;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  background-color: #d7e5ee;
 }
 
 hr {

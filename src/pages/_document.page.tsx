@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>{/* TODO favicon link */}</Head>
+        <Head><link rel="icon" href="/favicon.png" /></Head>
         <body>
           <Main />
           <NextScript />

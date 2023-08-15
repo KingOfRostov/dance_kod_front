@@ -28,17 +28,17 @@ export const InvitingForm = () => {
       });
 
       const response = await axios.post(
-        `https://api.telegram.org/bot{BOT_API_KEY}/sendMessage`,
+        `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_BOT_API_KEY}/sendMessage`,
         {
-          'chat_id': '{CHAT_ID} (должен быть числом, а не строкой)',
-          'text': `
-            Новая заявка:\n
-            ФИО родителя: ${formData.parentName}\n
-            ФИО ребенка: ${formData.childName}\n
-            Возраст ребенка: ${formData.childAge}\n
-            Адрес: ${formData.address}\n
-            Телефон: ${formData.phone}
-          `
+          'chat_id': Number(process.env.NEXT_PUBLIC_CHAT_ID),
+          'text':
+            'НОВАЯ ЗАЯВКА:\n\n' +
+            `ФИО родителя: ${formData.parentName}\n\n` +
+            `ФИО ребенка: ${formData.childName}\n\n` +
+            `Возраст ребенка: ${formData.childAge}\n\n` +
+            `Адрес: ${formData.address}\n\n` +
+            `Телефон: ${formData.phone}`
+
         }
       );
 
