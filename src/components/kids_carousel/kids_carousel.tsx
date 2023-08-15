@@ -1,10 +1,20 @@
 import Image from 'next/image'
 import styles from "./kids_carousel.module.scss";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const KidsCarousel = () => {
   return (
     <div className={styles.carousel_container}>
-      <div className={styles.carousel}>
+      <Carousel
+        autoFocus={true}
+        centerMode={true}
+        showArrows={false}
+        autoPlay={true}
+        interval={4000}
+        transitionTime={2000}
+        infiniteLoop={true}
+      >
         <Image
           className={styles.carousel_photo}
           src="/us_1.jpg"
@@ -33,8 +43,8 @@ export const KidsCarousel = () => {
           height={534}
           alt="Dance KOD коллектив. Школа танцев. Дети"
         />
-      </div>
-    </div>
+      </Carousel>
+    </div >
 
   );
 };
