@@ -1,0 +1,70 @@
+/* form */
+
+.inviting_form_block {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.inviting_form {
+    border: none;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.inviting_form label {
+    font-size: 18px;
+}
+
+.inviting_form input[type='text'],
+.inviting_form input[type='number'],
+.inviting_form select,
+.inviting_form input[type='tel'] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: #faf5f5;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.inviting_form select {
+    appearance: none;
+}
+
+.inviting_form button {
+    background-color: #1c5078;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inviting_form button:hover {
+    background-color: #0a3556;
+}
+
+.after_form_info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 800px) {
+    .inviting_form {
+        border: none;
+        border-radius: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
