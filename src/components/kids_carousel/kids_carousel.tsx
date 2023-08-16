@@ -14,6 +14,7 @@ export const KidsCarousel = () => {
         interval={2500}
         transitionTime={1000}
         infiniteLoop={true}
+        showThumbs={false}
       >
         <Image
           className={styles.carousel_photo}

@@ -4,14 +4,18 @@ interface Props {
   name: string;
 }
 export const PhoneButton = (props: Props) => {
+  const handlePhoneCall = () => {
+    // Создаем ссылку для инициирования звонка
+    const phoneLink = `tel:${props.phoneNumber}`;
 
+    // Перенаправляем пользователя на ссылку для звонка
+    window.location.href = phoneLink;
+  };
 
   return (
-    <button className={styles.call_button}>
+    <button className={styles.call_button} onClick={handlePhoneCall}>
       <p>{props.phoneNumber}</p>
       <p>{props.name}</p>
     </button>
-
-
   );
 };
