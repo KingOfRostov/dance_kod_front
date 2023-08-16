@@ -88,8 +88,8 @@ export const InvitingForm = () => {
 
           <label htmlFor="address">Выберите адрес *</label>
           <select id="address" name="address" required>
-            <option value="2-й пос. Оржонизидзе | ул. Днепропетровская 27">
-              2-й пос. Оржонизидзе | ул. Днепропетровская 27
+            <option value="2-й пос. Орджонизидзе | ул. Днепропетровская 27">
+              2-й пос. Орджонизидзе | ул. Днепропетровская 27
             </option>
             <option value="Северный | пер. Ольховский 71">Северный | пер. Ольховский 71</option>
           </select>
