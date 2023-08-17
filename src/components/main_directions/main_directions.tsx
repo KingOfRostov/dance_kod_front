@@ -1,4 +1,14 @@
 import Image from 'next/image'
+import ImageChoreography from '/public/choreography.png'
+import ImageClassicalDance from '/public/classical_dance.png'
+import ImageStretching from '/public/stretching.png'
+import ImageModern from '/public/modern.png'
+import ImageJazz from '/public/jazz.png'
+import ImageAcrobatic from '/public/acrobatic.png'
+import ImageCommonFp from '/public/common_fp.png'
+import ImageSpecialFp from '/public/special_fp.png'
+
+
 import styles from "./main_directions.module.scss";
 
 export const MainDirections = () => {
@@ -12,7 +22,7 @@ export const MainDirections = () => {
         <li>
           <div>
             <Image
-              src="/choreography.png"
+              src={ImageChoreography}
               width={60}
               height={60}
               alt="Современная хореография"
@@ -23,7 +33,7 @@ export const MainDirections = () => {
         <li>
           <div>
             <Image
-              src="/classical_dance.png"
+              src={ImageClassicalDance}
               width={60}
               height={60}
               alt="Классический танец"
@@ -34,7 +44,7 @@ export const MainDirections = () => {
         <li>
           <div>
             <Image
-              src="/stretching.png"
+              src={ImageStretching}
               width={60}
               height={60}
               alt="Стретчинг"
@@ -44,20 +54,20 @@ export const MainDirections = () => {
         </li>
         <li>
           <div>
-            <Image src="/modern.png" width={60} height={60} alt="Модерн" />
+            <Image src={ImageModern} width={60} height={60} alt="Модерн" />
             Модерн
           </div>
         </li>
         <li>
           <div>
-            <Image src="/jazz.png" width={60} height={60} alt="Джаз" />
+            <Image src={ImageJazz} width={60} height={60} alt="Джаз" />
             Джаз
           </div>
         </li>
         <li>
           <div>
             <Image
-              src="/acrobatic.png"
+              src={ImageAcrobatic}
               width={60}
               height={60}
               alt="Акробатика"
@@ -68,7 +78,7 @@ export const MainDirections = () => {
         <li>
           <div>
             <Image
-              src="/common_fp.png"
+              src={ImageCommonFp}
               width={60}
               height={60}
               alt="Общая физическая подготовка"
@@ -79,7 +89,7 @@ export const MainDirections = () => {
         <li>
           <div>
             <Image
-              src="/special_fp.png"
+              src={ImageSpecialFp}
               width={60}
               height={60}
               alt="Специальная физическая подготовка"

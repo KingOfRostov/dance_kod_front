@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ImageInst from '/public/inst.png'
 import Link from 'next/link'
 import styles from './footer.module.scss'
 
@@ -15,7 +16,7 @@ const Footer = () => {
           href="https://instagram.com/dance_kod_official?igshid=MmIzYWVlNDQ5Yg=="
         >
           <Image
-            src="/inst.png"
+            src={ImageInst}
             width={50}
             height={50}
             alt="Инстаграм instagram Dance KOD"
