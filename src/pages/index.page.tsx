@@ -35,7 +35,7 @@ export default function Home() {
       <Maps />
 
       <span className="text-center">
-        <ul>
+        <ul className="phone_numbers_ul">
           Звоните:
           <li>{TatianaPhoneNumber}</li>
           <li>‌{AnastasiaPhoneNumber}</li>
