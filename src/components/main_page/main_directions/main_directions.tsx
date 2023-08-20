@@ -8,14 +8,13 @@ import ImageAcrobatic from '/public/acrobatic.png'
 import ImageCommonFp from '/public/common_fp.png'
 import ImageSpecialFp from '/public/special_fp.png'
 
-
-import styles from "./main_directions.module.scss";
+import styles from './main_directions.module.scss'
 
 export const MainDirections = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <h1 className="page-header-text">
-        <span className='red'>Основные</span> направления
+        <span className="red">Основные</span> направления
       </h1>
 
       <ul className={styles.ul_2_cols}>
@@ -99,6 +98,5 @@ export const MainDirections = () => {
         </li>
       </ul>
     </div>
-
-  );
-};
+  )
+}

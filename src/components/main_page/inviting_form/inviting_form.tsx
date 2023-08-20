@@ -1,7 +1,7 @@
-import styles from "./inviting_form.module.scss";
-import InputMask from 'react-input-mask';
-import React, { useState } from 'react';
-import axios from 'axios'; // Для HTTP запросов
+import styles from './inviting_form.module.scss'
+import InputMask from 'react-input-mask'
+import React, { useState } from 'react'
+import axios from 'axios' // Для HTTP запросов
 
 export const InvitingForm = () => {
   const [formData, setFormData] = useState({
@@ -10,13 +10,13 @@ export const InvitingForm = () => {
     childAge: '',
     address: '',
     phone: ''
-  });
+  })
 
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
       setFormData({
@@ -25,58 +25,69 @@ export const InvitingForm = () => {
         childAge: e.currentTarget.childAge.value,
         address: e.currentTarget.address.value,
         phone: e.currentTarget.phone.value
-      });
+      })
 
       const response = await axios.post(
         `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_BOT_API_KEY}/sendMessage`,
         {
-          'chat_id': Number(process.env.NEXT_PUBLIC_CHAT_ID),
-          'text':
+          chat_id: Number(process.env.NEXT_PUBLIC_CHAT_ID),
+          text:
             'НОВАЯ ЗАЯВКА:\n\n' +
             `ФИО родителя: ${formData.parentName}\n\n` +
             `ФИО ребенка: ${formData.childName}\n\n` +
             `Возраст ребенка: ${formData.childAge}\n\n` +
             `Адрес: ${formData.address}\n\n` +
             `Телефон: ${formData.phone}`
-
         }
-      );
+      )
 
       if (response.status === 200) {
-        setSuccessMessage('Ваши данные успешно отправлены. Спасибо за доверие!');
-        setTimeout(function () {
-          setSuccessMessage('');
-        }.bind(this), 5000);
+        setSuccessMessage('Ваши данные успешно отправлены. Спасибо за доверие!')
+        setTimeout(
+          function () {
+            setSuccessMessage('')
+          }.bind(this),
+          5000
+        )
       }
     } catch (error) {
-      setErrorMessage('Произошла ошибка при попытке отправить данные. Пожалуйста, повторите попытку или свяжитесь с нами по телефонам, указанным внизу страницы. Спасибо!');
-      setTimeout(function () {
-        setErrorMessage('');
-      }.bind(this), 5000);
+      setErrorMessage(
+        'Произошла ошибка при попытке отправить данные. Пожалуйста, повторите попытку или свяжитесь с нами по телефонам, указанным внизу страницы. Спасибо!'
+      )
+      setTimeout(
+        function () {
+          setErrorMessage('')
+        }.bind(this),
+        5000
+      )
 
-      console.error('Error sending Telegram message:', error);
+      console.error('Error sending Telegram message:', error)
     }
-  };
-
+  }
 
   return (
-
     <div>
       {errorMessage && <div className={styles.error_popup}>{errorMessage}</div>}
-      {successMessage && <div className={styles.success_popup}>{successMessage}</div>}
+      {successMessage && (
+        <div className={styles.success_popup}>{successMessage}</div>
+      )}
       <div className={styles.inviting_form_block}>
         <h1 className="page-header-text">
           <span className="red">Запишись</span>
         </h1>
-        <form className={styles.inviting_form} onSubmit={handleFormSubmit} onChange={(e) => {
-          setFormData({
-            parentName: e.currentTarget.parentName.value,
-            childName: e.currentTarget.childName.value,
-            childAge: e.currentTarget.childAge.value,
-            address: e.currentTarget.address.value,
-            phone: e.currentTarget.phone.value
-          });
-        }}>
+        <form
+          className={styles.inviting_form}
+          onSubmit={handleFormSubmit}
+          onChange={(e) => {
+            setFormData({
+              parentName: e.currentTarget.parentName.value,
+              childName: e.currentTarget.childName.value,
+              childAge: e.currentTarget.childAge.value,
+              address: e.currentTarget.address.value,
+              phone: e.currentTarget.phone.value
+            })
+          }}
+        >
           <label htmlFor="parentName">ФИО родителя *</label>
           <input type="text" id="parentName" name="parentName" required />
 
@@ -91,7 +102,9 @@ export const InvitingForm = () => {
             <option value="2-й пос. Орджонизидзе | ул. Днепропетровская 27">
               2-й пос. Орджонизидзе | ул. Днепропетровская 27
             </option>
-            <option value="Северный | пер. Ольховский 71">Северный | пер. Ольховский 71</option>
+            <option value="Северный | пер. Ольховский 71">
+              Северный | пер. Ольховский 71
+            </option>
           </select>
 
           <label htmlFor="phone">Телефон *</label>
@@ -109,6 +122,5 @@ export const InvitingForm = () => {
         </form>
       </div>
     </div>
-
-  );
-};
+  )
+}

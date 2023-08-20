@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <hr />
       <h3 className={styles.title}>
-        <span className='red'>Мы</span> в соцсетях
+        <span className="red">Мы</span> в соцсетях
       </h3>
       <div className={styles.social}>
         <Link
@@ -25,10 +25,11 @@ const Footer = () => {
         <h3 className={styles.title}>
           <span className={styles.hashtag}>@dance_kod_official</span>
         </h3>
-        ‌
       </div>
       <hr />
-      Created by &copy;KingOfRostov &copy;mamorde
+      <div className={styles.copyright}>
+        Created by &copy;KingOfRostov &copy;MaMorde
+      </div>
     </footer>
   )
 }

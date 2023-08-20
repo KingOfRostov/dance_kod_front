@@ -1,0 +1,22 @@
+.root {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.carousel_photo {
+  height: auto;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .carousel_photo {
+    max-width: 100%;
+  }
+}
