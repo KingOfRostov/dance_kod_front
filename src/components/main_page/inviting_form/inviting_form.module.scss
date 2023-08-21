@@ -3,9 +3,9 @@
 .inviting_form_block {
     margin-top: 0;
     margin-bottom: 60px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url('/fon.jpg');
+    background-image: linear-gradient(rgba(162, 144, 144, 0.4), rgba(255, 255, 255, 0.3)), url('/form_fon_2.png');
     /* Прозрачный белый градиент и изображение */
-    border: none;
+    border: 1px dashed rgb(153, 84, 84);
     border-radius: 50px;
     background-size: cover;
     background-position: center;
@@ -123,6 +123,6 @@
     .inviting_form_block {
         margin-left: 10px;
         margin-right: 10px;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('/fon.jpg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url('/form_fon_1.jpg');
     }
 }
