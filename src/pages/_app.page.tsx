@@ -7,7 +7,7 @@ import type { AppProps } from 'next/app'
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <NextSeo title="Dance KOD" />
+      <NextSeo title="Dance KOD - Школа танцев Ростов-на-Дону. Хореография, Акробатика, Стретчинг, Дети." />
       <Component {...pageProps} />
     </>
   )
