@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from 'styles/index.module.scss'
 import { Layout } from '~/components/layout/layout'
 import { Guaranties } from '~/components/main_page/guaranties/guaranties'
