@@ -1,36 +1,54 @@
 import Image from 'next/image'
 import ImageInst from '/public/inst.png'
+import ImageTelegram from '/public/tg.png'
+import ImageTwitter from '/public/twitter.png'
+import ImageVk from '/public/vk.png'
 import Link from 'next/link'
 import styles from './footer.module.scss'
 
 const Footer = () => {
   return (
-    <footer>
-      <hr />
-      <h3 className={styles.title}>
-        <span className="red">Мы</span> в соцсетях
-      </h3>
-      <div className={styles.social}>
-        <Link
-          key="inst_dance_kod"
-          href="https://instagram.com/dance_kod_official?igshid=MmIzYWVlNDQ5Yg=="
-        >
-          <Image
-            src={ImageInst}
-            width={50}
-            height={50}
-            alt="Инстаграм instagram Dance KOD"
-          />
-        </Link>
-        <h3 className={styles.title}>
-          <span className={styles.hashtag}>@dance_kod_official</span>
-        </h3>
-      </div>
-      <hr />
-      <div className={styles.copyright}>
-        Created by &copy;KingOfRostov &copy;MaMorde
-      </div>
-    </footer>
+    <div className={styles.footer}>
+      <footer >
+        <div className={styles.socials}>
+          <div className={styles.social}>
+            <Link
+              key="inst_dance_kod"
+              href="https://instagram.com/dance_kod_official?igshid=MmIzYWVlNDQ5Yg=="
+            >
+              <Image
+                src={ImageInst}
+                alt="Инстаграм instagram Dance KOD"
+              />
+            </Link>
+          </div>
+          <div className={styles.social}>
+            <Image
+              src={ImageVk}
+              alt="Вконтакте vk вк Dance KOD"
+            />
+          </div>
+          <div className={styles.social}>
+            <Image
+              src={ImageTelegram}
+              width={32}
+              height={32}
+              alt="Телеграм Telegram Dance KOD"
+            />
+          </div>
+          <div className={styles.social}>
+            <Image
+              src={ImageTwitter}
+              alt="Твиттер Twitter Dance KOD"
+            />
+          </div>
+        </div>
+
+        <div className={styles.copyright}>
+          &copy;Dance KOD, Вдохновляем детей танцевать с 2023 года.
+        </div>
+      </footer>
+    </div>
   )
 }
 

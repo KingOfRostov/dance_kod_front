@@ -72,8 +72,8 @@ export const InvitingForm = () => {
         <div className={styles.success_popup}>{successMessage}</div>
       )}
       <div className={styles.inviting_form_block}>
-        <h1 className="page-header-text">
-          Запишись
+        <h1 className={styles.page_header_text}>
+          ЗАПИШИСЬ
         </h1>
         <form
           className={styles.inviting_form}
@@ -94,7 +94,8 @@ export const InvitingForm = () => {
 
           <input placeholder="Возраст ребенка" type="number" id="childAge" name="childAge" min="1" required />
 
-          <select id="address" name="address" required>
+          <select placeholder="Выберите адрес" id="address" name="address" required>
+            <option value="">Выберите адрес</option>
             <option value="2-й пос. Орджонизидзе | ул. Днепропетровская 27">
               2-й пос. Орджонизидзе | ул. Днепропетровская 27
             </option>
@@ -116,6 +117,6 @@ export const InvitingForm = () => {
           <button type="submit">Записаться</button>
         </form>
       </div>
-    </div>
+    </div >
   )
 }

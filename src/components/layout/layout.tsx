@@ -7,7 +7,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className={styles.main}>
       <Header />
       <div className={styles.content}>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
