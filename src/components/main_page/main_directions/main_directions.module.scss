@@ -2,36 +2,54 @@
   h1 {
     margin-bottom: 32px;
   }
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)),
+  url('/directions_fon.png');
+  background-size: cover;
+  color: #000000;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.direction_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.direction_description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.direction_image_block {
+  border: none;
+  border-radius: 50px;
+  object-fit: cover;
 }
 
 .ul_2_cols {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   /* Increased gap for a more spacious look */
 }
 
 .ul_2_cols li {
   position: relative;
-  background-color: #ffffff;
-  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
 }
 
-.ul_2_cols li > div {
+.ul_2_cols li>div {
   display: flex;
   align-items: center;
 
