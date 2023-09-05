@@ -66,14 +66,14 @@ export const InvitingForm = () => {
   }
 
   return (
-    <div>
+    <div className={styles.root}>
       {errorMessage && <div className={styles.error_popup}>{errorMessage}</div>}
       {successMessage && (
         <div className={styles.success_popup}>{successMessage}</div>
       )}
       <div className={styles.inviting_form_block}>
         <h1 className="page-header-text">
-          <span className="red">Запишись</span>
+          Запишись
         </h1>
         <form
           className={styles.inviting_form}
@@ -88,16 +88,12 @@ export const InvitingForm = () => {
             })
           }}
         >
-          <label htmlFor="parentName">ФИО родителя *</label>
-          <input type="text" id="parentName" name="parentName" required />
+          <input placeholder="ФИО родителя" type="text" id="parentName" name="parentName" required />
 
-          <label htmlFor="childName">ФИО ребенка *</label>
-          <input type="text" id="childName" name="childName" required />
+          <input placeholder="ФИО ребенка" type="text" id="childName" name="childName" required />
 
-          <label htmlFor="childAge">Возраст ребенка *</label>
-          <input type="number" id="childAge" name="childAge" min="1" required />
+          <input placeholder="Возраст ребенка" type="number" id="childAge" name="childAge" min="1" required />
 
-          <label htmlFor="address">Выберите адрес *</label>
           <select id="address" name="address" required>
             <option value="2-й пос. Орджонизидзе | ул. Днепропетровская 27">
               2-й пос. Орджонизидзе | ул. Днепропетровская 27
@@ -107,13 +103,12 @@ export const InvitingForm = () => {
             </option>
           </select>
 
-          <label htmlFor="phone">Телефон *</label>
           <InputMask
             mask="8 (999) 999 - 99 - 99"
             id="phone"
             type="tel"
             name="phone"
-            placeholder="8 (999) 999 - 99 - 99"
+            placeholder="Телефон для обратной связи"
             pattern="8 \([0-9]{3}\) [0-9]{3} - [0-9]{2} - [0-9]{2}"
             required
           />

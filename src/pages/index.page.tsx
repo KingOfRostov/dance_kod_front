@@ -28,7 +28,6 @@ export default function Home() {
         <KidsCarousel />
       </div> */}
 
-      {/* <InvitingForm /> */}
       {/* <hr /> */}
       <MainDirections />
       {/* <hr /> */}
@@ -48,6 +47,7 @@ export default function Home() {
         <PhoneButton phoneNumber={AnastasiaPhoneNumber} name={AnastasiaName} />
       </div> */}
       <Teachers />
+      <InvitingForm />
 
     </Layout>
   )
