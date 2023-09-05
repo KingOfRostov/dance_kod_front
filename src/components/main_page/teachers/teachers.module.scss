@@ -1,0 +1,52 @@
+.root {
+  background-color: #8507F2;
+  color: #ffffff;
+}
+
+.container {
+  overflow: hidden;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.main_header {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.subtitle_header {
+  margin: 5px;
+  font-size: 22px;
+}
+
+.teacher_card {
+  margin-top: 150px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  height: 300px;
+}
+
+
+.teacher_name {
+  font-size: 44px;
+  font-weight: 500;
+  color: #6564DB;
+  text-shadow: 1px 1px 30px #89D2DC;
+}
+
+.teacher_info {
+  color: #6564DB;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.dance_kod {
+  color: #9147FF;
+}

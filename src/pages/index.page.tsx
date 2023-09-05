@@ -6,6 +6,7 @@ import { InvitingForm } from '~/components/main_page/inviting_form/inviting_form
 import { KidsCarousel } from '~/components/main_page/kids_carousel/kids_carousel'
 import { MainDirections } from '~/components/main_page/main_directions/main_directions'
 import { Maps } from '~/components/main_page/maps/maps'
+import { Teachers } from '~/components/main_page/teachers/teachers'
 import { PhoneButton } from '~/components/phone_button/phone_button'
 
 export default function Home() {
@@ -46,6 +47,8 @@ export default function Home() {
         <br />
         <PhoneButton phoneNumber={AnastasiaPhoneNumber} name={AnastasiaName} />
       </div> */}
+      <Teachers />
+
     </Layout>
   )
 }

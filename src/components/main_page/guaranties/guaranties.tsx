@@ -30,8 +30,8 @@ export const Guaranties = () => (
 
       <div className={styles.guaranty_block}>
         <p className={styles.guaranty_text}>
-          Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и
-          насыщенных занятий
+          <span className="pink">Нас ждет множество</span> мероприятий, конкурсов, фестивалей, мастер-классов и
+          <span className="pink"> насыщенных занятий </span>
         </p>
         <Image
           className={styles.guaranty_image}

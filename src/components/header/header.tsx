@@ -20,8 +20,6 @@ export const Header = () => (
       </h2>
       <h2 className={styles.subTitle}>Школа танцев</h2>
 
-      <hr />
-
     </div>
   </div >
 )
