@@ -1,2 +1,28 @@
 .root {
+    background-color: #3A165A;
+}
+
+.guaranty_image {
+    border: none;
+    border-radius: 50px;
+}
+
+.guaranty_block {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.guaranty_text {
+    margin: 30px;
+}
+
+
+.guaranties_block {
+    margin-top: 50px !important;
+    padding-bottom: 50px !important;
+    font-size: 24px;
+    max-width: 900px;
+    margin: auto;
 }

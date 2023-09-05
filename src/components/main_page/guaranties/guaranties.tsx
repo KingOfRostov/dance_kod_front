@@ -1,27 +1,80 @@
+import Image from 'next/image'
+import Gain from '/public/dance.gif'
+import Trophy from '/public/trophy.gif'
+import LoveDance from '/public/love.gif'
+import WayUp from '/public/team.gif'
 import styles from './guaranties.module.scss'
 
 export const Guaranties = () => (
   <div className={styles.root}>
-    <h1 className="page-header-text">Почему</h1>
     <h1 className="page-header-text">
-      <span className="red">‌Вам нужно в KOD</span>?
+      Почему <span className="pink">‌Вам нужно в <b>KOD</b></span>?
     </h1>
 
-    <p className="text-justify">
-      Мы <span className="red">гарантируем</span> профессиональный и грамотный
-      подход к <span className="red">каждому </span>
-      ученику и <span className="red">рост</span> в танцевальных направлениях
-      <br />
-      <br />
-      Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и
-      насыщенных занятий
-      <br />
-      <br />В нашей <span className="red">команде</span> есть место тем, кто
-      разделяет нашу <span className="red">любовь</span> к танцам и готов
-      отдаться этому <span className="red">искусству</span>
-      <br />
-      <br />С <span className="red font-caveat fs-30">KOD</span> путь к большой
-      сцене будет насыщенным и очень интересным
-    </p>
+    <div className={styles.guaranties_block}>
+      <div className={styles.guaranty_block}>
+        <Image
+          className={styles.guaranty_image}
+          width={377}
+          height={377}
+          src={Gain}
+          alt="Dance KOD. Школа танцев КОД. Ростов-на-Дону школа танцев для детей."
+        />
+        <p className={styles.guaranty_text}>
+          <span className="pink">Мы гарантируем</span> профессиональный и грамотный
+          подход к <span className="pink">каждому </span>
+          ученику и <span className="pink">рост</span> в танцевальных направлениях
+        </p>
+      </div>
+
+
+      <div className={styles.guaranty_block}>
+        <p className={styles.guaranty_text}>
+          Нас ждут множество мероприятий, конкурсов, фестивалей, мастер-классов и
+          насыщенных занятий
+        </p>
+        <Image
+          className={styles.guaranty_image}
+          width={377}
+          height={377}
+          src={Trophy}
+          alt="Dance KOD. Школа танцев КОД. Ростов-на-Дону школа танцев для детей."
+        />
+      </div>
+
+
+      <div className={styles.guaranty_block}>
+        <Image
+          className={styles.guaranty_image}
+          width={377}
+          height={377}
+          src={LoveDance}
+          alt="Dance KOD. Школа танцев КОД. Ростов-на-Дону школа танцев для детей."
+        />
+        <p className={styles.guaranty_text}>
+          <span className="pink">В нашей команде есть</span> место тем, кто
+          разделяет нашу <span className="pink">любовь к</span> танцам и готов
+          отдаться этому <span className="pink">искусству</span>
+        </p>
+      </div>
+
+
+      <div className={styles.guaranty_block}>
+        <p className={styles.guaranty_text}>
+          <span className='pink'>С</span> <span className="pink font-caveat fs-30">KOD</span> пробиваться к большой сцене
+          <span className='pink'> будет насыщенно и</span> очень <span className='pink'>интересно</span>
+        </p>
+        <Image
+          className={styles.guaranty_image}
+          width={377}
+          height={377}
+          src={WayUp}
+          alt="Dance KOD. Школа танцев КОД. Ростов-на-Дону школа танцев для детей."
+        />
+      </div>
+
+
+    </div>
   </div>
+
 )
