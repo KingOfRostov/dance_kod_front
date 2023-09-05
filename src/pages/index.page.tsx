@@ -16,23 +16,23 @@ export default function Home() {
 
   return (
     <Layout>
-      <Introduction />
-      <hr />
+      {/* <Introduction /> */}
+      {/* <hr /> */}
       <Guaranties />
-      <hr />
-      <div>
+      {/* <hr /> */}
+      {/* <div>
         <h1 className="page-header-text">
           Стань частью нашего <span className="red">Комьюнити</span>
         </h1>
         <KidsCarousel />
-      </div>
+      </div> */}
 
-      <InvitingForm />
-      <hr />
+      {/* <InvitingForm /> */}
+      {/* <hr /> */}
       <MainDirections />
-      <hr />
-      <Maps />
-
+      {/* <hr /> */}
+      {/* <Maps /> */}
+      {/* 
       <span className="text-center">
         <ul className="phone_numbers_ul">
           Звоните:
@@ -45,7 +45,7 @@ export default function Home() {
         <PhoneButton phoneNumber={TatianaPhoneNumber} name={TatianaName} />
         <br />
         <PhoneButton phoneNumber={AnastasiaPhoneNumber} name={AnastasiaName} />
-      </div>
+      </div> */}
     </Layout>
   )
 }
