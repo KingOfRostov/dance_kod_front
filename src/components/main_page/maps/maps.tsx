@@ -1,8 +1,7 @@
 import styles from './maps.module.scss'
 
 export const Maps = () => (
-  <div>
-    <h1 className="page-header-text">Адреса</h1>
+  <div className={styles.root}>
     <div className={styles.maps_container}>
       <div className={styles.map}>
         <h3 className={styles.map_header_text}>ул. Днепропетровская 27</h3>

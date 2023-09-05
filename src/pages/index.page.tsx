@@ -31,23 +31,23 @@ export default function Home() {
       {/* <hr /> */}
       <MainDirections />
       {/* <hr /> */}
-      {/* <Maps /> */}
       {/* 
       <span className="text-center">
         <ul className="phone_numbers_ul">
-          Звоните:
-          <li>{TatianaPhoneNumber}</li>
-          <li>‌{AnastasiaPhoneNumber}</li>
+        Звоните:
+        <li>{TatianaPhoneNumber}</li>
+        <li>‌{AnastasiaPhoneNumber}</li>
         </ul>
-      </span>
-
-      <div className={styles.call_button_container}>
+        </span>
+        
+        <div className={styles.call_button_container}>
         <PhoneButton phoneNumber={TatianaPhoneNumber} name={TatianaName} />
         <br />
         <PhoneButton phoneNumber={AnastasiaPhoneNumber} name={AnastasiaName} />
       </div> */}
       <Teachers />
       <InvitingForm />
+      <Maps />
 
     </Layout>
   )
