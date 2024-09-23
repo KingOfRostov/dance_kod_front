@@ -1,0 +1,54 @@
+.files-section {
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+
+    @media (max-width: 800px) {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+
+            a {
+                color: #0a3556;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                font-size: 1.2rem;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                }
+
+                &:visited {
+                    color: #0a3556
+                }
+
+                .icon {
+                    margin-right: 10px;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('/document-icon.svg');
+                    /* иконка документа */
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

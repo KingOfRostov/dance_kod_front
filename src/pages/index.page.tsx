@@ -7,6 +7,7 @@ import { InvitingForm } from '~/components/main_page/inviting_form/inviting_form
 import { KidsCarousel } from '~/components/main_page/kids_carousel/kids_carousel'
 import { MainDirections } from '~/components/main_page/main_directions/main_directions'
 import { Maps } from '~/components/main_page/maps/maps'
+import { Agreements } from '~/components/main_page/agreements/agreements'
 import { PhoneButton } from '~/components/phone_button/phone_button'
 
 export default function Home() {
@@ -33,7 +34,8 @@ export default function Home() {
       <MainDirections />
       <hr />
       <Maps />
-
+      <hr />
+      <Agreements />
       <span className="text-center">
         <ul className="phone_numbers_ul">
           Звоните:
