@@ -8,6 +8,17 @@ const Footer = () => {
   return (
     <footer>
       <hr />
+      <div className={styles.info}>
+        <div className={styles.infoBlock}>
+          <h4 className={styles.infoTitle}>Детская школа танцев в Ростове-на-Дону</h4>
+          <p className={styles.infoText}>
+            Школа танцев для детей Dance KOD предлагает профессиональное обучение хореографии, 
+            акробатике, джазу, модерну и другим танцевальным направлениям. 
+            Бесплатная пробная тренировка для всех желающих.
+          </p>
+        </div>
+      </div>
+      <hr />
       <h3 className={styles.title}>
         <span className="red">Мы</span> в соцсетях
       </h3>
@@ -48,9 +59,6 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className={styles.copyright}>
-        Created by &copy;KingOfRostov &copy;MaMorde
-      </div>
     </footer>
   )
 }

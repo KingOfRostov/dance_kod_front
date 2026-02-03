@@ -20,12 +20,25 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <meta
-          name="description"
-          content="Школа танцев в Ростове-на-Дону. Школа танцев Ростов-на-Дону. КОД - комьюнити одаренных детей. Хореография|Акробатика|Танцы дети|Танцы для детей|Джаз|Гимнастика|Школа танцев для детей. Днепропетровская/Ольховски, Орджоникидзе/Северный"
-        />
-        <Head><link rel="icon" href="/favicon.png" /></Head>
+      <Html lang="ru">
+        <Head>
+          <meta charSet="utf-8" />
+          <link rel="icon" href="/favicon.png" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="description"
+            content="Школа танцев для детей в Ростове-на-Дону. Детская школа танцев Ростов. Профессиональное обучение хореографии, акробатике, джазу, модерну. Бесплатная пробная тренировка. Адреса: Днепропетровская 27 (Орджоникидзе), Ольховский 71 (Северный)."
+          />
+          <meta
+            name="keywords"
+            content="школа танцев ростов, школа танцев для детей ростов, школа танцев для детей ростов на дону, детская школа танцев ростов, танцы для детей ростов, хореография ростов, акробатика ростов, джаз ростов, модерн ростов, стретчинг ростов"
+          />
+          <meta name="author" content="Dance KOD" />
+          <meta name="robots" content="index, follow" />
+          <meta name="googlebot" content="index, follow" />
+          <meta name="yandex" content="index, follow" />
+          <link rel="canonical" href="https://dance-kod.ru" />
+        </Head>
         <body>
           <Main />
           <NextScript />
