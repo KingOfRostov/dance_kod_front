@@ -1,4 +1,5 @@
 import styles from './phone_button.module.scss'
+import { trackEvent } from '~/utils/analytics'
 
 interface Props {
   phoneNumber: string
@@ -7,6 +8,9 @@ interface Props {
 
 export const PhoneButton = ({ phoneNumber, name }: Props) => {
   const handlePhoneCall = () => {
+    // Отслеживание звонка
+    trackEvent('phone_click', 'contact', `${name}_${phoneNumber}`)
+    
     const phoneLink = `tel:${phoneNumber}`
     window.location.href = phoneLink
   }

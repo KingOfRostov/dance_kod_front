@@ -2,6 +2,7 @@ import styles from './inviting_form.module.scss'
 import InputMask from 'react-input-mask'
 import React, { useState } from 'react'
 import axios from 'axios' // Для HTTP запросов
+import { trackEvent } from '~/utils/analytics'
 
 export const InvitingForm = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +43,9 @@ export const InvitingForm = () => {
       )
 
       if (response.status === 200) {
+        // Отслеживание успешной отправки формы
+        trackEvent('form_submit', 'lead', 'application_form', 1)
+        
         setSuccessMessage('Ваши данные успешно отправлены. Спасибо за доверие!')
         setTimeout(
           function () {

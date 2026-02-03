@@ -1,12 +1,14 @@
 import 'styles/globals.scss'
 import React from 'react'
 import { NextSeo } from 'next-seo'
+import { Analytics } from '~/components/analytics/analytics'
 
 import type { AppProps } from 'next/app'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+      <Analytics />
       <NextSeo
         title="Школа танцев для детей в Ростове-на-Дону | Dance KOD"
         description="Детская школа танцев в Ростове-на-Дону. Профессиональное обучение хореографии, акробатике, джазу, модерну для детей. Бесплатная пробная тренировка. Адреса: Днепропетровская 27, Ольховский 71."
